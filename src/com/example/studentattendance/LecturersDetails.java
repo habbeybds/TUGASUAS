@@ -29,6 +29,9 @@ public class LecturersDetails extends Activity {
 	private String TAG = LecturersDetails.class.getSimpleName();
     private ProgressDialog pDialog;
     private ListView lv;
+    TextView tname;
+    
+    private String lecturer_id, lecturer_name;
     
     // URL to get contacts JSON
     private static String url = "http://apilearningattend.totopeto.com/lecturers";
@@ -40,8 +43,16 @@ public class LecturersDetails extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.lecturers_details);
 		
-		lv = (ListView) findViewById(R.id.list);
+		Intent intent = getIntent();
+		lecturer_id = intent.getStringExtra("id");
+		lecturer_name = intent.getStringExtra("name");
         
+		lv = (ListView) findViewById(R.id.list);
+		tname = (TextView) findViewById(R.id.txtName);
+        
+		setTitle("Lecturer Detail");
+		tname.setText(lecturer_name);
+		
         lv.setOnItemClickListener(new OnItemClickListener() {
 			
 			@Override

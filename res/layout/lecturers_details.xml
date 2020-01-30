@@ -5,44 +5,124 @@
     android:layout_height="match_parent"
     android:background="#7086F5"
     tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linear1"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp"
+        android:text="Hello,"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignLeft="@+id/txtPageSchedule"
+        android:text="Name"
+        android:textColor="#ffff00"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:typeface="sans" />
     
-	<TextView
-	    android:id="@+id/txtPageLecturers"
-	    android:layout_width="wrap_content"
+    <RelativeLayout
+        android:id="@+id/Relative1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/txtName"
+        android:layout_marginTop="20dp"
+        android:background="#7086F5"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp"
+        tools:context="${relativePackage}.${activityClass}" >
+    
+	<Button
+	    android:id="@+id/btnAddSchedule"
+	    android:layout_width="fill_parent"
 	    android:layout_height="wrap_content"
-	    android:layout_centerHorizontal="true"
-	    android:layout_marginTop="250dp"
-	    android:text="Lecturers Details"
+	    android:background="@drawable/mybutton"
+	    android:text="Add Schedule"
 	    android:textColor="#FFFFFF"
-	    android:textSize="24sp"
-	    android:textStyle="bold" />
+	    android:textStyle="bold"
+	    android:typeface="sans" />
 	
+	</RelativeLayout>
+	
+    <TextView
+        android:id="@+id/txtPageSchedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Relative1"
+        android:text="My Schedule :"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtPageSchedule"
+        android:layout_margin="15dp"
+        android:background="#FFFFFF"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/listSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:cacheColorHint="#fff1e4"
+            android:divider="@null"
+            android:dividerHeight="10dp"
+            android:listSelector="#caffcf"
+            android:paddingLeft="20dp" >
+        </ListView>
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/txtPageLecturers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RelativeLayout01"
+        android:layout_alignLeft="@+id/txtPageSchedule"
+        android:text="All Lecturers :"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    
     <RelativeLayout
         android:id="@+id/linear1"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="100dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/txtPageLecturers"
-        android:background="#FFFFFF"
         android:layout_margin="15dp"
+        android:background="#FFFFFF"
         android:gravity="center_horizontal"
         android:orientation="vertical" >
 
         <ListView
             android:id="@+id/list"
             android:layout_width="match_parent"
-			android:layout_height="match_parent"
-			android:cacheColorHint="#fff1e4"
-			android:divider="@null"
-			android:dividerHeight="10dp"
+            android:layout_height="match_parent"
             android:layout_marginBottom="4dp"
+            android:cacheColorHint="#fff1e4"
+            android:divider="@null"
+            android:dividerHeight="10dp"
             android:listSelector="#caffcf"
-            android:paddingLeft="20dp"
-             >
+            android:paddingLeft="20dp" >
         </ListView>
     </RelativeLayout>
 
 
 </RelativeLayout>
-

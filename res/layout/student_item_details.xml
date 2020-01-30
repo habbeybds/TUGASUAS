@@ -85,7 +85,7 @@
              android:text="null" />
 
          <TextView
-             android:id="@+id/textView2"
+             android:id="@+id/txtName"
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
              android:layout_alignLeft="@+id/textDOB"
@@ -97,8 +97,8 @@
              android:id="@+id/tvCreatedDate"
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
-             android:layout_alignBaseline="@+id/textView2"
-             android:layout_alignBottom="@+id/textView2"
+             android:layout_alignBaseline="@+id/txtName"
+             android:layout_alignBottom="@+id/txtName"
              android:layout_toRightOf="@+id/textDOB"
              android:text="datetime"
              android:textSize="18sp"

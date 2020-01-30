@@ -30,34 +30,39 @@ public final class R {
         public static final int mybutton=0x7f020001;
     }
     public static final class id {
-        public static final int action_settings=0x7f09001c;
+        public static final int Relative1=0x7f090010;
+        public static final int RelativeLayout01=0x7f090013;
+        public static final int action_settings=0x7f090021;
         public static final int btDosen=0x7f090008;
         public static final int btMahasiswa=0x7f090007;
         public static final int btlogin=0x7f090003;
+        public static final int btnAddSchedule=0x7f090011;
         public static final int btsimpan=0x7f09000b;
-        public static final int code=0x7f090011;
-        public static final int dob=0x7f090012;
-        public static final int etcode=0x7f09001a;
+        public static final int code=0x7f090017;
+        public static final int dob=0x7f090018;
+        public static final int etcode=0x7f09001f;
         public static final int etdob=0x7f09000a;
         public static final int etname=0x7f090001;
         public static final int etpassword=0x7f090002;
-        public static final int linear1=0x7f09000e;
-        public static final int list=0x7f09000f;
-        public static final int name=0x7f090010;
-        public static final int textDOB=0x7f090016;
-        public static final int textNIM=0x7f090014;
+        public static final int linear1=0x7f09000d;
+        public static final int list=0x7f090015;
+        public static final int listSchedule=0x7f090014;
+        public static final int name=0x7f090016;
+        public static final int textDOB=0x7f09001c;
+        public static final int textNIM=0x7f09001a;
         public static final int textView1=0x7f090006;
-        public static final int textView2=0x7f090018;
-        public static final int tvCreatedDate=0x7f090019;
-        public static final int tvcode=0x7f090015;
-        public static final int tvdob=0x7f090017;
-        public static final int tvname=0x7f090013;
+        public static final int tvCreatedDate=0x7f09001e;
+        public static final int tvcode=0x7f09001b;
+        public static final int tvdob=0x7f09001d;
+        public static final int tvname=0x7f090019;
         public static final int txtDaftarDosen=0x7f090009;
         public static final int txtDaftarMahasiswa=0x7f090005;
         public static final int txtJudul=0x7f090000;
         public static final int txtLogin=0x7f09000c;
-        public static final int txtPageLecturers=0x7f09000d;
-        public static final int txtPageStudents=0x7f09001b;
+        public static final int txtName=0x7f09000e;
+        public static final int txtPageLecturers=0x7f09000f;
+        public static final int txtPageSchedule=0x7f090012;
+        public static final int txtPageStudents=0x7f090020;
         public static final int txtRegister=0x7f090004;
     }
     public static final class layout {

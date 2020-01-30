@@ -20,7 +20,7 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity {
 	private String Pesan = "";
-	private String resultValidate = "";
+	private String resultValidate = "", getId, getName;
 	TextView bregister;
 	private Button btnLogin;
 	private String TAG = MainActivity.class.getSimpleName();
@@ -76,8 +76,11 @@ public class MainActivity extends Activity {
 		startActivity(intent);
 	}
 	
-	public void openlecturersPage(){
+	public void openLecturersPage(){
 		Intent intent = new Intent(MainActivity.this,LecturersDetails.class);
+		//Log.e("cek id",getId);
+		intent.putExtra("id", getId);
+		intent.putExtra("name", getName);
 		startActivity(intent);
 	}
 	public void openRegisterPage(){
@@ -187,6 +190,8 @@ public class MainActivity extends Activity {
                             //Log.e("outputnya", "POST =" + etpassword.getText().toString() + "GET = " + password + "&&" + "POST =" + etname.getText().toString() + "GET = " + code);
                             
                             if(etname.getText().toString().contentEquals(name) && etpassword.getText().toString().contentEquals(password)){
+                            	getId = id;
+                            	getName = name;
                             	resultValidate = "true_lecturers";
                             	break;
                             }else{
@@ -231,7 +236,8 @@ public class MainActivity extends Activity {
         	if(resultValidate.contentEquals("true")){
         		openStudentsPage();
         	}else if(resultValidate.contentEquals("true_lecturers")){
-        		openlecturersPage();
+        		
+        		openLecturersPage();
         	}else{
         		Toast.makeText(getApplicationContext(),
         		message,
