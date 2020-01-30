@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7086F5"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <!--
+         <Button 
+        android:id="@+id/btloginLecturer"
+        android:text="Lecturer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btloginStudents"
+        />
+    -->
+
+    <TextView
+        android:id="@+id/txtJudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="28dp"
+        android:text="JADWAL MAHASISWA"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtJudul"
+        android:layout_marginBottom="15dp"
+        android:hint="NIM / Lecturer name"
+        android:textColor="#ffffff"
+        android:textColorHint="#eaeaea"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <EditText
+        android:id="@+id/etpassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etname"
+        android:layout_marginBottom="4dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#ffffff"
+        android:textColorHint="#eaeaea"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <Button
+        android:id="@+id/btlogin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="@+id/txtJudul"
+        android:layout_marginBottom="156dp"
+        android:background="@drawable/mybutton"
+        android:text="MASUK"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/txtRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtDaftarMahasiswa"
+        android:layout_alignBottom="@+id/txtDaftarMahasiswa"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/txtDaftarMahasiswa"
+        android:text="Tambahkan!"
+        android:textColor="@color/text_color"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtDaftarMahasiswa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btlogin"
+        android:layout_alignTop="@+id/btlogin"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="60dp"
+        android:text="Belum punya akun?"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

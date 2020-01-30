@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Student Attendance</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_students_details">Student Page</string>
+	<string name="title_activity_students_add">Student Add</string>
+	<string name="title_activity_students_item_details">Student Details</string>
+	<string name="title_activity_choose_register">Choose Register</string>
+	<string name="title_activity_lecturers_details">Lecturers Page</string>
+	<string name="title_activity_lecturers_add">Lecturers Add</string>
+	
+</resources>

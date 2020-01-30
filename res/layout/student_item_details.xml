@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7086F5"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="${relativePackage}.${activityClass}" >
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="21dp"
+        android:text="Data Peribadi :"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_margin="15dp"
+        android:layout_marginTop="17dp"
+        android:background="#FFFFFF"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+		<TextView
+		    android:id="@+id/tvname"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_alignParentTop="true"
+		    android:layout_marginTop="22dp"
+		    android:text="Who am I"
+		    android:textColor="#ff5733"
+		    android:textSize="24sp"
+		    android:textStyle="bold" />
+         
+         
+		 <TextView
+             android:id="@+id/textNIM"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignBaseline="@+id/tvcode"
+             android:layout_alignBottom="@+id/tvcode"
+             android:text="NIM / NIK :" />
+		 
+         <TextView
+             android:id="@+id/tvcode"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/tvname"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="37dp"
+             android:layout_marginLeft="15dp"
+             android:text="null" />
+         
+		 <TextView
+             android:id="@+id/textDOB"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/textNIM"
+             android:layout_below="@+id/textNIM"
+             android:layout_marginTop="30dp"
+             android:text="Date of Birth" />
+		
+         <TextView
+             android:id="@+id/tvdob"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignBaseline="@+id/textDOB"
+             android:layout_alignBottom="@+id/textDOB"
+             android:layout_alignLeft="@+id/tvcode"
+             android:layout_marginLeft="15dp"
+             android:text="null" />
+
+         <TextView
+             android:id="@+id/textView2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/textDOB"
+             android:layout_alignParentBottom="true"
+             android:layout_marginBottom="22dp"
+             android:text="Created at :" />
+
+         <TextView
+             android:id="@+id/tvCreatedDate"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignBaseline="@+id/textView2"
+             android:layout_alignBottom="@+id/textView2"
+             android:layout_toRightOf="@+id/textDOB"
+             android:text="datetime"
+             android:textSize="18sp"
+             android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

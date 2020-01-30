@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.studentattendance"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+    
+	<uses-permission android:name="android.permission.INTERNET" />
+	
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    
+        <activity
+            android:name=".StudentsDetails"
+            android:label="@string/title_activity_students_details" >
+        </activity>
+        <activity
+            android:name=".StudentsAdd"
+            android:label="@string/title_activity_students_add" >
+        </activity>
+        <activity
+            android:name=".StudentsItemDetails"
+            android:label="@string/title_activity_students_item_details" >
+        </activity>
+        <activity
+            android:name=".ChooseRegister"
+            android:label="@string/title_activity_choose_register" >
+        </activity>
+        <activity
+            android:name=".LecturersDetails"
+            android:label="@string/title_activity_lecturers_details" >
+        </activity>
+        <activity
+            android:name=".LecturersAdd"
+            android:label="@string/title_activity_lecturers_add" >
+        </activity>
+    </application>
+
+</manifest>
