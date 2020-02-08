@@ -73,6 +73,8 @@ public class MainActivity extends Activity {
 	
 	public void openStudentsPage(){
 		Intent intent = new Intent(MainActivity.this,StudentsDetails.class);
+		intent.putExtra("id", getId);
+		intent.putExtra("name", getName);
 		startActivity(intent);
 	}
 	
@@ -131,6 +133,8 @@ public class MainActivity extends Activity {
                         //Log.e("outputnya", "POST =" + etpassword.getText().toString() + "GET = " + password + "&&" + "POST =" + etname.getText().toString() + "GET = " + code);
                         
                         if(etname.getText().toString().contentEquals(code) && etpassword.getText().toString().contentEquals(password)){
+                        	getId = id;
+                        	getName = name;
                         	resultValidate = "true";
                         	break;
                         }else{

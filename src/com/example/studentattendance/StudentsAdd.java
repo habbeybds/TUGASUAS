@@ -135,6 +135,8 @@ public class StudentsAdd extends Activity {
             		message,
                     Toast.LENGTH_LONG)
                     .show();
+            
+            finish();
             /**
              * Updating parsed JSON data into ListView
              * */

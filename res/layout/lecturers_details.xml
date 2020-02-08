@@ -70,6 +70,7 @@
         android:layout_height="100dp"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/txtPageSchedule"
+        android:padding="5dp"
         android:layout_margin="15dp"
         android:background="#FFFFFF"
         android:gravity="center_horizontal"
@@ -80,11 +81,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="4dp"
-            android:cacheColorHint="#fff1e4"
-            android:divider="@null"
-            android:dividerHeight="10dp"
             android:listSelector="#caffcf"
-            android:paddingLeft="20dp" >
+			android:cacheColorHint="#fff1e4"
+			android:divider="@null"
+			android:dividerHeight="10dp" >
         </ListView>
     </RelativeLayout>
     
@@ -94,7 +94,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/RelativeLayout01"
         android:layout_alignLeft="@+id/txtPageSchedule"
-        android:text="All Lecturers :"
+        android:text="Other Lecturers :"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold" />
@@ -106,6 +106,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/txtPageLecturers"
+        android:padding="5dp"
         android:layout_margin="15dp"
         android:background="#FFFFFF"
         android:gravity="center_horizontal"
@@ -119,8 +120,7 @@
             android:cacheColorHint="#fff1e4"
             android:divider="@null"
             android:dividerHeight="10dp"
-            android:listSelector="#caffcf"
-            android:paddingLeft="20dp" >
+            android:listSelector="#caffcf" >
         </ListView>
     </RelativeLayout>
 

@@ -6,43 +6,106 @@
     android:background="#7086F5"
     tools:context="${relativePackage}.${activityClass}" >
     
+    <Button
+            android:id="@+id/btnCheckin"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:visibility="visible"
+            android:background="@drawable/custom_button_students" />
+    
+    <Button
+            android:id="@+id/btnCheckout"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:visibility="invisible"
+            android:background="@drawable/custom_button_checkout" />
+    
 	<TextView
-	    android:id="@+id/txtPageStudents"
+	    android:id="@+id/txtPageSchedule"
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/btnCheckout"
 	    android:layout_centerHorizontal="true"
-	    android:layout_marginTop="250dp"
-	    android:text="All Students :"
-	    android:textColor="#FFFFFF"
+	    android:text="Ongoing schedule :"
+	    android:textColor="#003300"
 	    android:textSize="24sp"
 	    android:textStyle="bold" />
-	
+
     <RelativeLayout
-        android:id="@+id/linear1"
+        android:id="@+id/RelativeLayout01"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/txtPageStudents"
-        android:background="#FFFFFF"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtPageSchedule"
+        android:padding="5dp"
         android:layout_margin="15dp"
+        android:background="#FFFFFF"
         android:gravity="center_horizontal"
         android:orientation="vertical" >
 
         <ListView
-            android:id="@+id/list"
+            android:id="@+id/listOngoingSchedule"
             android:layout_width="match_parent"
-			android:layout_height="match_parent"
-			android:cacheColorHint="#fff1e4"
-			android:divider="@null"
-			android:dividerHeight="10dp"
+            android:layout_height="match_parent"
             android:layout_marginBottom="4dp"
             android:listSelector="#caffcf"
-            android:paddingLeft="20dp"
-             >
+			android:cacheColorHint="#fff1e4"
+			android:divider="@null"
+			android:dividerHeight="10dp" >
+        </ListView>
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/txtPageHistorySchedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtPageSchedule"
+        android:layout_below="@+id/RelativeLayout01"
+        android:text="History Schedule :"
+        android:textColor="#ffff00"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    
+    <RelativeLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtPageHistorySchedule"
+        android:padding="5dp"
+        android:layout_margin="15dp"
+        android:background="#FFFFFF"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/listHistorySchedule"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:cacheColorHint="#fff1e4"
+            android:divider="@null"
+            android:dividerHeight="10dp"
+            android:listSelector="#caffcf" >
         </ListView>
     </RelativeLayout>
 
+    <Button
+        android:id="@+id/btnallstudents"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignRight="@+id/linear1"
+        android:layout_alignTop="@+id/btnCheckin"
+        android:background="@drawable/btn_all_students" />
 
 </RelativeLayout>
 

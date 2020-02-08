@@ -128,6 +128,8 @@ public class LecturersAdd extends Activity {
             		message,
                     Toast.LENGTH_LONG)
                     .show();
+            
+            finish();
             /**
              * Updating parsed JSON data into ListView
              * */

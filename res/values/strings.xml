@@ -10,5 +10,9 @@
 	<string name="title_activity_choose_register">Choose Register</string>
 	<string name="title_activity_lecturers_details">Lecturers Page</string>
 	<string name="title_activity_lecturers_add">Lecturers Add</string>
+	<string name="title_activity_schedule_add">Schedule Add</string>
+	<string name="title_schedule_lecturer_others">Schedule Lecturer Others</string>
+	<string name="title_schedule_attendance">Schedule Attendance Page</string>
+	<string name="title_all_students">All Students Page</string>
 	
 </resources>
