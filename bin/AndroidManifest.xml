@@ -65,6 +65,11 @@
             android:name=".AllStudents"
             android:label="@string/title_all_students" >
         </activity>
+        <activity
+            android:name=".StudentJoinSchedule"
+            android:label="@string/title_all_students_join" >
+        </activity>
+        
         
     </application>
 

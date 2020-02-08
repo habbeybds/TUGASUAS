@@ -103,10 +103,13 @@ public class LecturersDetails extends Activity {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 				// TODO Auto-generated method stub
-				Toast.makeText(getApplicationContext(),
+				
+				openStudentsJoinSchedule(position);
+				
+				/*Toast.makeText(getApplicationContext(),
                         "API not found!",
                         Toast.LENGTH_LONG)
-                        .show();
+                        .show();*/
 			}
 		});
         
@@ -130,6 +133,14 @@ public class LecturersDetails extends Activity {
 		Intent intent = new Intent(LecturersDetails.this, SchaduleLecturerOthers.class);
 		intent.putExtra("id", hm.get("id"));
 		intent.putExtra("name", hm.get("name"));
+		startActivity(intent);
+	}
+	
+	public void openStudentsJoinSchedule(int position){
+		HashMap<String, String> hm = scheduleList.get(position);
+		Intent intent = new Intent(LecturersDetails.this, StudentJoinSchedule.class);
+		intent.putExtra("id", hm.get("id"));
+		intent.putExtra("name", hm.get("subject_name"));
 		startActivity(intent);
 	}
 	

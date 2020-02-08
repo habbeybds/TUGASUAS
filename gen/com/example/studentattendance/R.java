@@ -42,18 +42,18 @@ public final class R {
     public static final class id {
         public static final int Relative1=0x7f090013;
         public static final int RelativeLayout01=0x7f090001;
-        public static final int action_settings=0x7f09003a;
+        public static final int action_settings=0x7f09003b;
         public static final int btDosen=0x7f09000b;
         public static final int btMahasiswa=0x7f09000a;
         public static final int btlogin=0x7f090006;
         public static final int btnAddSchedule=0x7f090014;
-        public static final int btnCheckin=0x7f090034;
-        public static final int btnCheckout=0x7f090035;
-        public static final int btnallstudents=0x7f090039;
+        public static final int btnCheckin=0x7f090035;
+        public static final int btnCheckout=0x7f090036;
+        public static final int btnallstudents=0x7f09003a;
         public static final int btsimpan=0x7f09000e;
         public static final int code=0x7f090019;
         public static final int dob=0x7f090022;
-        public static final int etcode=0x7f09002e;
+        public static final int etcode=0x7f09002f;
         public static final int etdob=0x7f09000d;
         public static final int etjadwalmulai=0x7f090026;
         public static final int etjadwalselesai=0x7f090027;
@@ -64,16 +64,17 @@ public final class R {
         public static final int linear1=0x7f090010;
         public static final int list=0x7f090017;
         public static final int listAllStudents=0x7f090002;
-        public static final int listHistorySchedule=0x7f090038;
-        public static final int listOngoingSchedule=0x7f090036;
+        public static final int listHistorySchedule=0x7f090039;
+        public static final int listOngoingSchedule=0x7f090037;
         public static final int listSchedule=0x7f090015;
+        public static final int listStudentJoin=0x7f09002e;
         public static final int name=0x7f090018;
-        public static final int sptolecturer=0x7f090031;
-        public static final int sptoschedule=0x7f090032;
+        public static final int sptolecturer=0x7f090032;
+        public static final int sptoschedule=0x7f090033;
         public static final int textDOB=0x7f09002b;
         public static final int textNIM=0x7f090029;
         public static final int textView1=0x7f090009;
-        public static final int tvCheckSchedule=0x7f09002f;
+        public static final int tvCheckSchedule=0x7f090030;
         public static final int tvCreatedDate=0x7f09002d;
         public static final int tvcheckIn=0x7f09001d;
         public static final int tvcheckOut=0x7f09001f;
@@ -84,8 +85,8 @@ public final class R {
         public static final int tvsubjectName=0x7f09001b;
         public static final int tvtimeIn=0x7f090020;
         public static final int tvtimeOut=0x7f090021;
-        public static final int tvtolecturer=0x7f090030;
-        public static final int tvtoschedule=0x7f090033;
+        public static final int tvtolecturer=0x7f090031;
+        public static final int tvtoschedule=0x7f090034;
         public static final int txtDaftarDosen=0x7f09000c;
         public static final int txtDaftarMahasiswa=0x7f090008;
         public static final int txtJadwalKeluar=0x7f09001e;
@@ -94,7 +95,7 @@ public final class R {
         public static final int txtLogin=0x7f09000f;
         public static final int txtName=0x7f090011;
         public static final int txtPageAllStudents=0x7f090000;
-        public static final int txtPageHistorySchedule=0x7f090037;
+        public static final int txtPageHistorySchedule=0x7f090038;
         public static final int txtPageLecturers=0x7f090016;
         public static final int txtPageSchedule=0x7f090012;
         public static final int txtRegister=0x7f090007;
@@ -112,12 +113,14 @@ public final class R {
         public static final int list_item_lecturers=0x7f030008;
         public static final int list_item_ongoing=0x7f030009;
         public static final int list_item_schedules=0x7f03000a;
-        public static final int schadule_add=0x7f03000b;
-        public static final int schedule_lecturer_others=0x7f03000c;
-        public static final int student_item_details=0x7f03000d;
-        public static final int students_add=0x7f03000e;
-        public static final int students_attendance_check=0x7f03000f;
-        public static final int students_details=0x7f030010;
+        public static final int list_item_students_join=0x7f03000b;
+        public static final int schadule_add=0x7f03000c;
+        public static final int schedule_lecturer_others=0x7f03000d;
+        public static final int student_item_details=0x7f03000e;
+        public static final int student_schedule_join=0x7f03000f;
+        public static final int students_add=0x7f030010;
+        public static final int students_attendance_check=0x7f030011;
+        public static final int students_details=0x7f030012;
     }
     public static final class menu {
         public static final int main=0x7f080000;
@@ -134,6 +137,7 @@ public final class R {
         public static final int title_activity_students_details=0x7f050003;
         public static final int title_activity_students_item_details=0x7f050005;
         public static final int title_all_students=0x7f05000c;
+        public static final int title_all_students_join=0x7f05000d;
         public static final int title_schedule_attendance=0x7f05000b;
         public static final int title_schedule_lecturer_others=0x7f05000a;
     }

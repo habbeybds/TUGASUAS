@@ -139,6 +139,10 @@ public class StudentsCheckAttendance extends Activity{
 						// TODO Auto-generated method stub
 						HashMap<String, String> hm = scheduleList.get(pos);
 						schedule_id = hm.get("id");
+						/*Toast.makeText(getApplicationContext(),
+                                 "Test Schedule id: " + schedule_id,
+                                 Toast.LENGTH_LONG)
+                                 .show();*/
 						Log.e("Test Schedule id", schedule_id);
 						
 					}
